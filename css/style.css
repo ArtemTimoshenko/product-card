@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,800);
 
 body{
-font:400 14px/1.7 'Titillium Web', Helvetica, Arial, sans-serif;
-color: #263238;
+	font:400 14px/1.7 'Titillium Web', Helvetica, Arial, sans-serif;
+	color: #263238;
 }
 
 /* Typography */
@@ -58,4 +58,173 @@ textarea {
 	padding-left: 20px;
 	padding-right: 20px;
 	max-width: 840px;
+	/*background-color: red;*/
 }
+
+.ba-slider--padTop{
+	padding-top: 90px;
+
+}
+
+.slider-image{
+	display: inline-block;
+}
+
+.ba-slider:after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -8px;
+	z-index: 100;
+	width: 16px;
+	height: 15px;
+	background: url("../img/hand.png") 50% no-repeat;
+}
+
+
+/*----------------------------------------------item description----------------------------------------------------*/
+
+/*---------Header*-----------------------*/
+
+.ba-product__info{
+	padding: 45px 40px 10px 32px;
+	position: relative;
+}
+
+.ba-product__spec{
+	position: absolute;
+	font-size: 13px;
+	line-height: 13px;
+	text-decoration: none;
+	right: 40px;
+	top: 50px;
+	color: #536DFE;
+	font-weight: 800;
+	padding-left: 20px;
+}
+
+.ba-product__spec:hover{
+opacity: .75;
+}
+
+.ba-product__spec:before{
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 12px;
+	background: url("../img/spec.png") 0 no-repeat;
+	position: absolute;
+	right: 37px;
+	top: 0;
+}
+
+.ba-product__model{
+	margin: 0;
+}
+
+.ba-product__title{
+	margin: 0;
+	padding-top: 2px;
+	letter-spacing: .025em;
+	font-size: 29px;
+}
+
+.ba-product__rights{
+	font-size: 17px;
+	vertical-align: top;
+	display: inline-block;
+	padding-top: 5px;
+}
+
+.ba-product__subtitle{
+	margin: 0;
+	font-size: 25px;
+	line-height: 25px;
+}
+
+.ba-product__specification{
+	color: #787E80;
+	font-size: 17px;
+	margin: 0;
+	letter-spacing: .01em;
+	padding-top: 19px;
+	line-height: 24px;
+}
+
+.ba-product__description{
+	font-size: 14px;
+	margin: 0;
+	letter-spacing: .025em;
+	padding-top: 22px;
+}
+
+.ba-product__bluetooth{
+	color: #6A80FE;
+	text-decoration: none;
+	-webkit-transition: text-shadow .3s ease-in;
+	-moz-transition: text-shadow .3s ease-in;
+	transition: text-shadow .3s ease-in;
+}
+
+.ba-product__bluetooth:hover{
+	text-shadow: 1px 1px 1px #687ced;
+}
+
+/*--------------------------------------------------rating------------------------------*/
+
+.ba-rating{
+padding-top: 22px;
+}
+
+.ba-rating__stars{
+display: inline-block;
+vertical-align: middle
+}
+
+.ba-rating__star{
+display: inline-block;
+height: 13px;
+width: 12px;
+margin-right: 1px;
+background: url("../img/rating.png") 0 -12px no-repeat;
+}
+
+.ba-rating__star--gold{
+background-position: 0 0;
+}
+
+.ba-rating__value{
+display: inline-block;
+padding-left: 27px;
+}
+
+.ba-rating__score{
+color: #F1425D;
+font-size: 15px;
+letter-spacing: .1em;
+font-weight: bold;
+}
+
+.ba-rating__reviews{
+color: #7A8082;
+font-size: 13px;
+letter-spacing: .025em;
+}
+
+/*------------------------------------------------booking form-----------------------------------------*/
+
+.ba-product__price{
+color: #F1425D;
+font-size: 26px;
+letter-spacing: .035em;
+font-weight: bold;
+}
+
+.ba-product__overcosts{
+color: #9BA3A7;
+
+}
+
+
+
