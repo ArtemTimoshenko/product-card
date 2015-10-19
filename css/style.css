@@ -72,6 +72,10 @@ textarea {
 	position: relative;
 }
 
+.ba-product{
+padding-bottom: 27px;
+}
+
 .ba-product__logo{
 	position: absolute;
 	top: 0;
@@ -105,7 +109,7 @@ textarea {
 /*---------Header*-----------------------*/
 
 .ba-product__info{
-	padding: 45px 40px 10px 32px;
+	padding: 45px 20px 10px 32px;
 	position: relative;
 }
 
@@ -114,7 +118,7 @@ textarea {
 	font-size: 13px;
 	line-height: 13px;
 	text-decoration: none;
-	right: 40px;
+	right: 20px;
 	top: 50px;
 	color: #536DFE;
 	font-weight: 800;
@@ -254,20 +258,36 @@ textarea {
 
 /*------------------------------colorchoosing---------------------------------------------------*/
 
+.ba-product__variations{
+    text-align: right;
+}
+
 .ba-product__colorasc{
 	font-size: 12px;
 	padding-top: 0;
 	margin: 0;
 	letter-spacing: .01em;
+font-weight: bold;
+padding-bottom: 13px;
 }
 
 .ba-product__colorcheck{
+margin-left: 20px;
 	display: inline-block;
 	width: 21px;
 	height: 21px;
 	cursor: pointer;
 	position: relative;
-	background: red;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+
+.ba-product__colorchack--gray{
+	background-color: #E8E6E3;
+}
+
+.ba-product__colorchack--black{
+	background-color: #3C383A;
 }
 
 input[type=radio]{
@@ -275,13 +295,18 @@ input[type=radio]{
 }
 
 input[type=radio]:checked + .ba-product__colorcheck {
-	-webkit-box-shadow: 2px 8px 2px red;
-	box-shadow: 2px 8px 2px red;
+border: 2px solid white;
+-webkit-box-shadow: 0 0 1px 2px #536DFE;
+        box-shadow: 0 0 1px 2px #536DFE;
 }
 
 
 /*--------------------------------------Quantity----------------------------------------------------*/
 
+
+.ba-product__add-to-cart{
+padding-top: 39px;
+}
 
 .ba-product__qty{
 	font-size: 13px;
