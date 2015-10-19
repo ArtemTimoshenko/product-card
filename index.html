@@ -23,25 +23,26 @@
 	<body>
 		<main role="main" >
 			<div class="ba-container">
+			<a class="ba-product__logo" href="#"><img src="img/logo.png" alt="logo"></a>
 				<article class="ba-product">
 					<div class="ba-grid">
 						<div class="ba-width-medium-1-2 ba-slider--rel">
 							<!-- slider -->
 							<div class="ba-slider ba-slider--padTop">
 								<div class="ba-slide">
-									<img src="img/products/Product Image.png" alt="Headphones" class="slider-image">
+									<img src="img/products/headphones1.png" alt="Headphones" class="slider-image">
 								</div>
 								<div class="ba-slide">
-									<img src="img/products/Product Image.png" alt="Headphones" class="slider-image">
+									<img src="img/products/headphones1.png" alt="Headphones" class="slider-image">
 								</div>
 								<div class="ba-slide">
-									<img src="img/products/Product Image.png" alt="Headphones" class="slider-image">
+									<img src="img/products/headphones1.png" alt="Headphones" class="slider-image">
 								</div>
 								<div class="ba-slide">
-									<img src="img/products/Product Image.png" alt="Headphones">
+									<img src="img/products/headphones1.png" alt="Headphones">
 								</div>
 								<div class="ba-slide">
-									<img src="img/products/Product Image.png" alt="Headphones">
+									<img src="img/products/headphones1.png" alt="Headphones">
 								</div>
 							</div>
 						</div>
@@ -77,19 +78,25 @@
 											<p class="ba-product__overcosts">Shipping and taxes extra</p>
 										</div>
 										<div class="ba-product__variations ba-float-right-small">
-											<label></label>
-											<input type="radio" name="product_color" value="black">
-											<input type="radio" name="product_color" value="grey">
+											<p class="ba-product__colorasc">Choose your colors</p>
+
+											<label class="ba-product__colorcheck ba-product__colorchack--gray" for="color--gray"></label>
+											<input id="color--gray" type="radio" name="product_color" value="grey">
+
+											<label class="ba-product__colorcheck ba-product__colorchack--black" for="color--blacK"></label>
+											<input id="color--blacK" type="radio" name="product_color" value="black">
 										</div>
 									</div>
 									<div class="ba-product__add-to-cart">
-										<label class="ba-product__qty">
-											Quantity
+										<!-- Quantity -->
+										<label class="ba-product__qty">Quantity
 											<input class="ba-product__qty-field" name="product_qty" type="number" value="01" step="1" min="1" required>
-											<button class="ba-product__qty-up"></button>
-											<button class="ba-product__qty-down"></button>
+											<div class="ba-product__buttons">
+												<button class="ba-product__qty-up"></button>
+												<button class="ba-product__qty-down"></button>
+											</div>
 										</label>
-										<button class="ba-button" type="submit">Add to Cart</button>
+										<button class="ba-button ba-float-right-small" type="submit">Add to Cart</button>
 									</div>
 								</form>
 							</div>

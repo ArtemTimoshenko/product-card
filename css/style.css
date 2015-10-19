@@ -19,12 +19,21 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+	font-size: 17px;
+	width: 147px;
+	height: 46px;
+	border: none;
+	line-height: 46px;
+	text-align: center;
+	color: #FFF;
+	background-color: #536DFE;
 }
+
 input[type="submit"]:hover,
 input[type="button"]:hover,
 button:hover,
 .ba-button:hover{
-
+	opacity: .8;
 }
 
 input[type="text"],
@@ -55,14 +64,22 @@ textarea {
 
 /* Layout */
 .ba-container{
+	margin-top: 80px;
 	padding-left: 20px;
 	padding-right: 20px;
-	max-width: 840px;
-	/*background-color: red;*/
+	max-width: 800px;
+	box-shadow: 0 7px 15px rgba(0,0,0,.5);
+	position: relative;
+}
+
+.ba-product__logo{
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .ba-slider--padTop{
-	padding-top: 90px;
+	padding-top: 47px;
 
 }
 
@@ -73,7 +90,7 @@ textarea {
 .ba-slider:after{
 	content: "";
 	position: absolute;
-	top: 100%;
+	top: 93.6%;
 	left: 50%;
 	margin-left: -8px;
 	z-index: 100;
@@ -105,7 +122,7 @@ textarea {
 }
 
 .ba-product__spec:hover{
-opacity: .75;
+	opacity: .75;
 }
 
 .ba-product__spec:before{
@@ -174,57 +191,165 @@ opacity: .75;
 /*--------------------------------------------------rating------------------------------*/
 
 .ba-rating{
-padding-top: 22px;
+	padding-top: 22px;
 }
 
 .ba-rating__stars{
-display: inline-block;
-vertical-align: middle
+	display: inline-block;
+	vertical-align: middle
 }
 
 .ba-rating__star{
-display: inline-block;
-height: 13px;
-width: 12px;
-margin-right: 1px;
-background: url("../img/rating.png") 0 -12px no-repeat;
+	display: inline-block;
+	height: 13px;
+	width: 12px;
+	margin-right: 1px;
+	background: url("../img/rating.png") 0 -12px no-repeat;
 }
 
 .ba-rating__star--gold{
-background-position: 0 0;
+	background-position: 0 0;
 }
 
 .ba-rating__value{
-display: inline-block;
-padding-left: 27px;
+	display: inline-block;
+	padding-left: 27px;
 }
 
 .ba-rating__score{
-color: #F1425D;
-font-size: 15px;
-letter-spacing: .1em;
-font-weight: bold;
+	color: #F1425D;
+	font-size: 15px;
+	letter-spacing: .1em;
+	font-weight: bold;
 }
 
 .ba-rating__reviews{
-color: #7A8082;
-font-size: 13px;
-letter-spacing: .025em;
+	color: #7A8082;
+	font-size: 13px;
+	letter-spacing: .025em;
 }
 
 /*------------------------------------------------booking form-----------------------------------------*/
 
+.ba-product__meta{
+	padding-top: 14px;
+}
+
 .ba-product__price{
-color: #F1425D;
-font-size: 26px;
-letter-spacing: .035em;
-font-weight: bold;
+	padding-top: 5px;
+	color: #F1425D;
+	font-size: 26px;
+	letter-spacing: .035em;
+	font-weight: bold;
+	line-height: 26px;
 }
 
 .ba-product__overcosts{
-color: #9BA3A7;
+	margin: 0;
+	padding-top: 6px;
+	color: #9BA3A7;
+	font-size: 12px;
+	letter-spacing: .05em;
+}
 
+/*------------------------------colorchoosing---------------------------------------------------*/
+
+.ba-product__colorasc{
+	font-size: 12px;
+	padding-top: 0;
+	margin: 0;
+	letter-spacing: .01em;
+}
+
+.ba-product__colorcheck{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	cursor: pointer;
+	position: relative;
+	background: red;
+}
+
+input[type=radio]{
+	display: none;
+}
+
+input[type=radio]:checked + .ba-product__colorcheck {
+	-webkit-box-shadow: 2px 8px 2px red;
+	box-shadow: 2px 8px 2px red;
 }
 
 
+/*--------------------------------------Quantity----------------------------------------------------*/
 
+
+.ba-product__qty{
+	font-size: 13px;
+	letter-spacing: .05em;
+	line-height: 46px;
+	font-weight: bold;
+	margin: 0;
+	display: inline-block;
+	height: 46px;
+	position: relative;
+}
+
+.ba-product__qty-field::-webkit-inner-spin-button,
+.ba-product__qty-field::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.ba-product__qty-field{
+	margin-top: ;
+	width: 50px;
+	height: 44px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: .025em;
+	outline: none;
+	margin-left: 7px;
+	display: inline;
+
+}
+
+.ba-product__buttons{
+	position: relative;
+	height: 46px;
+	width: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 8px;
+}
+
+.ba-product__qty-up{
+	border: none;
+	background-color: transparent;
+	display: inline-block;
+	width: 11px;
+	height: 6px;
+	background: url("../img/counter.png") 0 0 no-repeat;
+	position: absolute;
+	right: 0;
+	top: 5px;
+	outline: none;
+}
+
+.ba-product__qty-down{
+	border: none;
+	background-color: transparent;
+	display: inline-block;
+	width: 11px;
+	height: 6px;
+	background: url("../img/counter.png") 0 -7px no-repeat;
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	outline: none;
+}
+
+.ba-product__qty-up:hover,
+.ba-product__qty-down:hover{
+	opacity: .7;
+}
